@@ -16,7 +16,7 @@ function App() {
     setError('');
     try {
       const jsonInput = JSON.parse(input);
-      const result = await axios.post('http://localhost:3000/bfhl', jsonInput, {
+      const result = await axios.post('https://bajaj-taskround21bce10286.onrender.com/bfhl', jsonInput, {
         headers: { 'Content-Type': 'application/json' }
       });
       setResponse(result.data);
